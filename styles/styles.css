@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'JosefinSans';
+    src: url(fonts/JosefinSans.ttf);
+}
+.aside{
+    float: left; height: 100% ; width: 14%; border-top-left-radius: 11px; border-top-right-radius: 11px;
+}
+.bottom{
+    bottom: 0px; position: absolute; width: 100%; height: 84vh;
+}
+#titulo{
+    font-size: 70px;
+    font-family: JosefinSans;
+    margin-left: 10px;
+}
+.subtitulo{
+    font-size: 70px;
+    font-family: JosefinSans;
+    margin-left: 10px;
+    font-size: 40px;
+    margin-top: 20px
+}
+.conteudo{
+    margin-left: 10px;
+    font-family: JosefinSans;
+    font-size: 14px;
+    transition: 0.7s;
+    opacity: 0;
+}
+header{
+    display: flex;
+    align-items: flex-end;
+}
+.galeria{
+    height: 80%; width: 30%;    
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 17%, rgba(252,176,69,1) 34%, rgba(253,29,29,1) 51%, rgba(131,58,180,1) 68%, rgba(253,29,29,1) 85%, rgba(252,176,69,1) 100%);;
+    color: white;
+    background-size: 294% 294%;
+    animation: colorful  1.5s infinite;
+    transition: 2s;
+    border-radius: 11px;
+    margin: 25px; 
+    float: left;
+}
+.imgdiv{
+    width: 100%;
+    height: 70%;
+    transition: 1s;
+    background-color: cadetblue; border-top-left-radius: 11px; border-top-right-radius: 11px;
+}
+.galeria:hover .imgdiv {
+    height: 0%;
+}
+.galeria:hover{
+    animation-play-state: paused;
+}
+.info{
+    margin-left: 10px;
+}
+.galeria:hover .info .conteudo{
+    opacity: 1;
+    color: white;
+}
+.clickable{
+    transition: 2s;
+}
+.clickable:hover{
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 17%, rgba(252,176,69,1) 34%, rgba(253,29,29,1) 51%, rgba(131,58,180,1) 68%, rgba(253,29,29,1) 85%, rgba(252,176,69,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 294% 294%;
+    animation: colorful 1.5s infinite;
+}
+.selector{
+    align-content: flex-end;
+    text-align: center;
+    font-size: 30px ;
+    background-color: black;
+    font-family: JosefinSans;
+    color: white;
+    border-radius: 20px;
+    height: 40px;
+}
+@keyframes colorful {
+    0%{background-position:0% 0%}
+    100%{background-position:100% 115%}
+  }
+#grandeParte{
+    float: right; height: 100% ; width: 84%; border-top-left-radius: 11px; border-top-right-radius: 11px;
+}
