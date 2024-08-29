@@ -1,8 +1,6 @@
 const divElement = document.querySelector('div'); // Replace 'div' with the ID or class of your actual div element
 
-divElement.addEventListener('click', function() {
-  window.location.href = 'https://www.soterasdev.com:8080'; // Replace 'https://www.example.com' with the URL of your desired page
-});
+divElement
 
 // Define the word you want to search for
 const searchTerm = 1;
@@ -25,12 +23,13 @@ fetch(`http://localhost:3000/api/words?word=${searchTerm}`)
       const img = document.createElement('img');
       const info = document.createElement('div');
       const galeriaDiv = document.createElement('div');
-
+    
       title.className = 'subtitulo';
       content.className = 'conteudo';
       img.className = 'imgdiv';
       info.className = "info";
       galeriaDiv.className = "galeria";
+      
 
       title.textContent = item.title;
       content.textContent = item.content;
@@ -39,7 +38,12 @@ fetch(`http://localhost:3000/api/words?word=${searchTerm}`)
       info.appendChild(content)
       galeriaDiv.appendChild(img)
       galeriaDiv.appendChild(info)
-      
+      galeriaDiv.onclick = function () {
+        window.location.href = item.link;
+      };
+      galeriaDiv.addEventListener('click', function() {
+        window.location.href = item.link; // Replace 'https://www.example.com' with the URL of your desired page
+      });
       galeriaListDiv.appendChild(galeriaDiv);
     })
     .catch(error => console.error('Error fetching words:', error));
