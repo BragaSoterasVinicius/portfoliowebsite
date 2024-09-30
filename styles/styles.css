@@ -21,9 +21,10 @@
     margin-top: 20px
 }
 .conteudo{
+	margin-right:10px;
     margin-left: 10px;
     font-family: JosefinSans;
-    font-size: 14px;
+    font-size: 20px;
     transition: 0.7s;
     opacity: 0;
 }
