@@ -6,7 +6,7 @@ divElement
 const searchTerm = 1;
 
 // Fetch words that match the searchTerm from the API
-fetch(`http://www.soterasdev.com:3000/api/words`)
+fetch(`https://portfolio.soterasdev.com/projects/`)
     .then(response => response.json())
     .then(data => {
         console.log(data);
