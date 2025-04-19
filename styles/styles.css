@@ -65,9 +65,9 @@ header{
     display: flex;
     align-items: flex-end;
 }
-.galeria{
-    height: 400px; width: 300px;    
+.galeria{ 
     background: black;
+    height: 400px; width: 270px;    
     color: white;
     background-size: 294% 294%;
     animation: colorful  1.5s infinite;
@@ -119,6 +119,3 @@ header{
     0%{background-position:0% 0%}
     100%{background-position:100% 115%}
   }
-#grandeParte{
-    float: right; height: 100% ; width: 84%; border-top-left-radius: 11px; border-top-right-radius: 11px;
-}
